@@ -48,12 +48,13 @@ The service will be available at `http://localhost:8000`.
 ## What you would improve if this were production
 
 - Add database persistence for image metadata and analysis results
-- Deploy with load balancing, auto-scaling, and containerization (Docker, Kubernetes)
+- Deploy with load balancing, auto-scaling, and container orchestration (Docker & Kubernetes)
 - Implement robust input validation, security headers, and vulnerability scanning
 - Add caching for frequently accessed analysis results
 - Implement monitoring, alerting, and distributed tracing for observability
 - Establish a CI/CD pipeline with automated testing and deployment
-- Configure CORS for cross-origin requests
-- Store all sensitive data in environment variables (.env)
+- Configure CORS for secure cross-origin requests
+- Store all sensitive configuration in environment variables (.env)
 - Implement rate limiting to prevent API abuse and DDoS attacks
-- Add login attempt throttling with account lockout after failed attempts
+- Add login attempt throttling with temporary account lockout after multiple failures
+- Migrate to a more robust, production-grade database setup
