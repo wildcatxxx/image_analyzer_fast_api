@@ -2,7 +2,25 @@
 
 ## How to run the service
 
+
 ```bash
+# setup environment .venv
+# Mac
+python3 -m venv .venv
+
+# windows
+python -m venv .venv
+
+# activate environment
+# Windows	Command Prompt (cmd.exe)	
+.venv\Scripts\activate.bat
+
+# Windows	PowerShell	
+.venv\Scripts\Activate.ps1
+
+# macOS/Linux	Bash/Zsh	
+source .venv/bin/activate
+
 # Install dependencies
 pip install -r requirements.txt
 
